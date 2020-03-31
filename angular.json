@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Quoted"
+    }
+  },
+  "defaultProject": "Quoted",
+  "cli": {
+    "analytics": false
+  }
 }
