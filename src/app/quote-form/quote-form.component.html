@@ -1,1 +1,28 @@
-<p>quote-form works!</p>
+
+    <div class="container-fluid">
+        <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+              <div class="form-group">
+  
+                  <p>Fill up the form below to get started.</p>
+        
+                  <label for="author">Original Author of Quote:</label>
+                  <input type="text" required class="form-control" [(ngModel)]="newQuote.author" placeholder="Jane Doe">
+                  <!--  -->
+              </div>
+          <div class="form-group">
+              <label for="quote">Quote:</label>
+              <textarea class="form-control" placeholder="My quote!" [(ngModel)]="newQuote.quote" name="description" #description="ngModel" required></textarea>    
+          </div>
+          <div class="form-group">
+              <label for="publisher">Your Name:</label>
+              <input type="text" required class="form-control" [(ngModel)]="newQuote.publisher" name="publisher" #publisher="ngModel" placeholder="John Doe">    
+          </div>
+  
+          <div class="form-group">
+              <label for="date"> Date Posted:</label><br>
+              <input type='date' [(ngModel)]="newQuote.completeDate" #actualDate="ngModel" required>
+           </div>
+          
+          <button type="submit" class="btn btn-success">Publish Your Quote !</button>  
+      </form>
+    </div>

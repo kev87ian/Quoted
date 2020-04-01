@@ -1,1 +1,21 @@
-<p>quote works!</p>
+<h1 style="text-align: center;">Quoted</h1>
+
+<div class="container">
+  <div class="jumbotron">
+  <p>Quite literally, the term "philosophy" means, "love of wisdom." In a broad sense, philosophy is an activity people undertake when they seek to understand fundamental truths about themselves, the world in which they live, and their relationships to the world and to each other. As an academic discipline philosophy is much the same. 
+    Those who study philosophy are perpetually engaged in asking, answering, and arguing for their answers to life's most basic questions. </p>
+
+</div>
+  <ol type="a">
+    <div *ngFor='let quote of quotes;let position = index'>
+    <li >{{quote.quote}}</li>
+    <button style="color: black;" (click)='toogleDetails(position)'>Learn More</button>
+    <app-quote-detail *ngIf="quote.showDesc" [quote]='quote' (vote)='upVote($event,position)' (downvote)='downVote($event,position)' (quoteDelete)='deleteQuote($event,position)'></app-quote-detail>
+
+</div>
+<div class="container" id="form">
+  <h3>Wanna share an awesome quote too?</h3>
+  <app-quote-form (addQuote)="quoteSubmission($event)"></app-quote-form>
+  </div> 
+  
+
