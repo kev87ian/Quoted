@@ -14,7 +14,7 @@ export class QuoteComponent implements OnInit {
     new Quote(2,"When the soul suffers too much, it develops a taste for misfortune.", "Albert Camus", "Mathenge Kevin",0,0,new Date(2020,2,30)),
     new Quote(3,"If you tell a big enough lie and tell it frequently enough, it will be believed.", "Adolf Hitler", "Mbugua Brian",0,0,new Date(2020,2,30)),
     new Quote(4, "If you are lonely when you're alone, you are in bad company.", "Jean-Paul Sartre", "Mathenge Kevin",0,0,new Date(2020,1,30)),
-    new Quote(5,"Cogito ergo sum. (I think, therefore I am.)", "Rene Descartes", "Juliet Mutheu",0,0,new Date(2020,2,30))
+    new Quote(5,"Cogito ergo sum. (I think, therefore I am.)", "Rene Descartes", "Juliet",0,0,new Date(2020,2,30))
    
     ]
 
