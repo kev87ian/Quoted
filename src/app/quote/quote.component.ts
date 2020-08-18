@@ -10,7 +10,7 @@ export class QuoteComponent implements OnInit {
  
   quotes = [
 
-    new Quote(1," The only serious question in life is whether to kill yourself or not.", "Albert Camus", "Mathenge Kevin", 0,0,new Date(2019,2,22)), 
+    new Quote(1," The best part about being a pessimist is that I'm either right, or pleasantly suprised.", "George F. Will", "Mathenge Kevin", 0,0,new Date(2019,2,22)), 
     new Quote(2,"When the soul suffers too much, it develops a taste for misfortune.", "Albert Camus", "Mathenge Kevin",0,0,new Date(2020,2,30)),
     new Quote(3,"If you tell a big enough lie and tell it frequently enough, it will be believed.", "Adolf Hitler", "Mbugua Brian",0,0,new Date(2020,2,30)),
     new Quote(4, "If you are lonely when you're alone, you are in bad company.", "Jean-Paul Sartre", "Mathenge Kevin",0,0,new Date(2020,1,30)),
